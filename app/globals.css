@@ -1,0 +1,20 @@
+:root {
+    --background-mono-elements: #FFE348;
+    --background-multi-elements: #FFB7D8;
+    --font-color: #094BAC;
+    --base-color: #FFFFFF;
+}
+
+.title-font {
+    font-family: var(--inter-font);
+    font-weight: 800;
+}
+
+.body-font {
+    font-family: var(--inter-font);
+    font-weight: 600;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
