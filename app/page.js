@@ -21,6 +21,7 @@ export default function Home() {
             className='pic'
         />
         <p>Photo by <a href="https://unsplash.com/@churchoftodd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">todd kent</a> on <a href="https://unsplash.com/photos/kW1P8R-UoWI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        {/*the balls pic: <p>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/wallpapers/colors/yellow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p> */}
     </div>
 
         
