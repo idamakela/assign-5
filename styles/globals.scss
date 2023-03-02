@@ -1,16 +1,103 @@
+@import 'mixins';
+
+$background-mono: #FFE348;
+$background-multi: #FFB7D8;
+$font-color: #094BAC;
+$base-color: #FFFFFF;
+
+$nav-lines: 3.5px;
+
 :root {
-    --background-mono: #FFE348;
-    --background-multi: #FFB7D8;
-    --font-color: #094BAC;
-    --base-color: #FFFFFF;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 html {
     font-family: var(--inter-font), 'Courier New', Courier, monospace;
+    height: 100vh;
+}
+
+body {
+    background-color: $background-mono;
+}
+
+main {
+    padding: 2.5% 5%;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid $nav-lines $font-color;
+    
+
+    .nav-left {
+        @include flex-row;
+        align-items: center
+    }
+    
+    .nav-items {
+        @include flex-row;
+        gap: 25%;
+        padding: 10%;
+        
+        a {
+            @include body-font;
+            text-decoration: none;
+            color: $font-color;
+        }
+    }
+
+    .icon {
+        font-size: 4rem;
+        padding: 0.5em 1.2em;
+        color: $font-color;
+    }
+
+    .icon.left {
+        border-right: solid $nav-lines $font-color;
+    }
+
+    .icon.right {
+        border-left: solid $nav-lines $font-color;
+    }
+}
+
+.landing-container {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon {
+        font-size: 20rem;
+        color: $font-color;
+    }
+}
+
+.landing-text {
+    color: $font-color;
+    margin-bottom: 5%;
+    
+    h1 {
+        @include statement-font;
+    }
+    
+    h2 {
+        @include title-font;
+        max-width: 1400px;
+    }
+}
+
+.landing-img {
+    .pic {
+        width: 100%;
+        height: 100%;
+        border-radius: 2.4rem;
+    }
 }

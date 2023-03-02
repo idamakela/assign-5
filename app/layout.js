@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import NavLayout from './navbar'
-import '..styles/globals.scss'
+import '../styles/globals.scss'
 import variables from '../styles/variables.module.scss'
 
 const inter = Inter({ 
@@ -16,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-        <body>
+        {/* <head>
+            <link rel="icon" type="image/svg+js" href="../public/face-smiling-beam-regular.svg" />
+        </head> */}
+        <body className={inter.className}>
             <NavLayout />
             <main>{children}</main>
         </body>

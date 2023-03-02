@@ -1,21 +1,24 @@
 import Link from 'next/link';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa'
-import styles from '../app/page.module.css'
+
+function underline()  {
+    //on mouseenter add styling: border-bottom: solid 5px $font-color; on link tags
+}
 
 export default function NavLayout() {
     return (
         <>
         <nav>
-            <div>
-                <div><FaRegSmileBeam /></div>
+            <div className='nav-left'>
+                <div className='icon left'><FaRegSmileBeam /></div>
                 <div className='nav-items'>
-                    <h2><Link href='/'>Home</Link></h2>
-                    <h2><Link href='/projects'>Projects</Link></h2>
-                    <h2><Link href='/about'>About</Link></h2>
-                    <h2><Link href='/contact'>Contact</Link></h2>
+                    <Link href='/'>Home</Link>
+                    <Link href='/projects'>Projects</Link>
+                    <Link href='/about'>About</Link>
+                    <Link href='/contact'>Contact</Link>
                 </div>
             </div>
-            <div><FaGripLines/></div>
+            <div className='icon right'><FaGripLines /></div>
         </nav>
         </>
     )

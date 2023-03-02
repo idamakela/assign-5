@@ -1,7 +1,7 @@
 @import 'mixins';
 
-@include mobobile(){
+@include mobile(){
     .title {
-        font-size: larger;
+        font-size: 2em;
     }
 }

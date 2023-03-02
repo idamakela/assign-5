@@ -1,32 +1,30 @@
-/*BASE STYLING, FIXED*/
-.titlefont {
-    font-family: var(--inter-font);
-    font-weight: 800;
-}
-
-.bodyfont {
-    font-family: var(--inter-font);
-    font-weight: 600;
-}
-
-.navitems a{
-    font-size: 1.6rem;
-    text-transform: capitalize;
-    text-decoration: none;
-    color: var(--font-color);
-}
-
-.monopage {
-    background-color: var(--background-mono);
-}
-
-.multipage {
-    background-color: var(--background-multi);
-}
-
-
 @mixin mobile {
     @media (max-width: 600px) {
         @content;
     }
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column  {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin statement-font {
+    font-size: 15rem;
+    font-weight: 800;
+}
+
+@mixin title-font {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+@mixin body-font {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
