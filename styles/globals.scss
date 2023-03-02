@@ -1,0 +1,16 @@
+:root {
+    --background-mono: #FFE348;
+    --background-multi: #FFB7D8;
+    --font-color: #094BAC;
+    --base-color: #FFFFFF;
+}
+
+html {
+    font-family: var(--inter-font), 'Courier New', Courier, monospace;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

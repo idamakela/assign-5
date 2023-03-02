@@ -1,12 +1,13 @@
 import { Inter } from 'next/font/google'
-import './globals.css'
-;
+import NavLayout from './navbar'
+import '..styles/globals.scss'
+import variables from '../styles/variables.module.scss'
+
 const inter = Inter({ 
     variable: '--inter-font',
     subsets: ['latin'] 
 })
 
-// metadatan kan ändras, är som titel i index html
 export const metadata = {
   title: 'Ida Mäkelä',
   description: 'FrontEnd / App Developer Portfolio',
@@ -15,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+        <body>
+            <NavLayout />
+            <main>{children}</main>
+        </body>
     </html>
   )
 }

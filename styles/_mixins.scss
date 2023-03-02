@@ -1,0 +1,32 @@
+/*BASE STYLING, FIXED*/
+.titlefont {
+    font-family: var(--inter-font);
+    font-weight: 800;
+}
+
+.bodyfont {
+    font-family: var(--inter-font);
+    font-weight: 600;
+}
+
+.navitems a{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.monopage {
+    background-color: var(--background-mono);
+}
+
+.multipage {
+    background-color: var(--background-multi);
+}
+
+
+@mixin mobile {
+    @media (max-width: 600px) {
+        @content;
+    }
+}

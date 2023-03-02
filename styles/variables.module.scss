@@ -1,0 +1,7 @@
+@import 'mixins';
+
+@include mobobile(){
+    .title {
+        font-size: larger;
+    }
+}
