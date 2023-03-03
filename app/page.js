@@ -9,7 +9,7 @@ export default function Home() {
     <div className="landing-container">
         <div className="landing-text">
             <h1>Ida Mäkelä.</h1>
-            <h2>Front End / App developer student located in Stockholm. *Welcoming message...*</h2>
+            <h2>Front End / App developer located in Stockholm. *...Welcoming message...*</h2>
         </div>
         <div className='icon'><FaLaptopCode /></div>
     </div>
