@@ -100,4 +100,14 @@ nav {
         height: 100%;
         border-radius: 2.4rem;
     }
+
+    .ref {
+        font-size: 1rem;
+        margin: 1%;
+        text-align: end;
+
+        a {
+            color:$font-color;
+        }
+    }
 }

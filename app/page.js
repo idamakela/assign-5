@@ -21,7 +21,7 @@ export default function Home() {
             className='pic'
             alt='Close up yellow rubber ducks in a blue small pool of water. Taken from Jason Richard on Unsplash.'
         />
-        <p>Photo by <a href="https://unsplash.com/es/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Richard</a> on <a href="https://unsplash.com/photos/VTvnoNBowZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        <p className='ref'>Photo by <a href="https://unsplash.com/es/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Richard</a> on <a href="https://unsplash.com/photos/VTvnoNBowZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
     </div>
 
         
