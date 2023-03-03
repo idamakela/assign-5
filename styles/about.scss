@@ -35,7 +35,7 @@ body {
 
     div {
         @include flex-column;
-        padding: 5em 10em;
+        padding: 4em 8em;
         background-color: $font-color;
         border-radius: 2.4rem;
         color: $base-color;
@@ -43,7 +43,11 @@ body {
 
         h3 {
             @include title-font;
+            margin-bottom: 1%;
+        }
 
+        p {
+            @include body-font;
         }
     }
     
