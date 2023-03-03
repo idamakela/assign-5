@@ -30,3 +30,16 @@ body {
         max-width: 1400px;
     }
 }
+
+.form-container {
+    @include flex-column;
+    background-image: url('../public/emily-bernal-r2F5ZIEUPtk-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-color: $font-color;
+    color: $base-color;
+    padding: $base-indent;
+    border-radius: 2.4rem;
+}
