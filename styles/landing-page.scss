@@ -18,7 +18,7 @@ body {
 
 .landing-text {
     color: $font-color;
-    margin-bottom: 5%;
+    margin-bottom: $base-indent;
     
     h1 {
         @include statement-font;

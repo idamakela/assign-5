@@ -22,7 +22,7 @@ body {
 
 main {
     flex-grow: 1;
-    padding: 5%;
+    padding: $base-indent;
 }
 
 nav {
@@ -68,7 +68,7 @@ footer {
     @include flex-row;
     @include body-font;
     justify-content: space-between;
-    padding: 5%;
+    padding: calc($base-indent/2) $base-indent;
     border-top: solid $nav-lines $font-color;
     color: $font-color;
     align-items: center;
