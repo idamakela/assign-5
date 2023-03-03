@@ -3,8 +3,8 @@ import '../../styles/about.scss'
 export default function About() {
     return (
         <>
-        <div className="container">
-            <div className="text">
+        <div className="about-container">
+            <div className="about-text">
                 <h2>About me.</h2>
                 <h3>*...some short description about myself...*</h3>
             </div>

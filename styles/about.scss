@@ -5,13 +5,13 @@ body {
     background-color: $background-mono;
 }
 
-.container {
+.about-container {
     @include flex-row;
     align-items: center;
     justify-content: center;
 }
 
-.text {
+.about-text {
     color: $font-color;
     margin-bottom: $base-indent;
     text-align: center;

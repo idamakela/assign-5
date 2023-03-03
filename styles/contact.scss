@@ -1,0 +1,32 @@
+@import 'mixins';
+@import 'variables';
+
+//may fix the body tag a bit...
+body {
+    background-color: $background-multi;
+}
+
+.contact-container {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon {
+        font-size: 20rem;
+        color: $font-color;
+    }
+}
+
+.contact-text {
+    color: $font-color;
+    margin-bottom: $base-indent;
+    
+    h2 {
+        @include statement-font;
+    }
+    
+    h3 {
+        @include title-font;
+        max-width: 1400px;
+    }
+}
