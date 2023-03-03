@@ -74,23 +74,26 @@ footer {
     align-items: center;
 
     h2 {
-        @include body-font;
+        @include title-font;
     }
 
     .footer-items {
-        @include flex-row;
-        gap: 15%;
+        gap: 20%;
         text-transform: capitalize;
 
         a {
             text-decoration: none;
             color: $font-color;    
         }
+    }
 
-        @include mobile {
-            flex-direction: column;
-            gap: 20%;
-        }
+    .footer-items.left {
+        @include flex-row;
+    }
+
+    .footer-items.right {
+        @include flex-column;
+        align-items: end;
     }
 
     .icon {

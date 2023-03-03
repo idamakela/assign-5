@@ -6,14 +6,17 @@ export default function FooterLayout() {
     return (
         <>
         <footer>
-            <div className='footer-items'>
+            <div className='footer-items left'>
                 <Link href='/'>Home</Link>
                 <Link href='/projects'>Projects</Link>
                 <Link href='/about'>About</Link>
                 <Link href='/contact'>Contact</Link>
             </div>
             <FaRegSmileBeam className='icon'/>
-            <h2>&copy; Ida Mäkelä</h2>
+            <div className='footer-items right'>
+                <h2>&copy; Ida Mäkelä</h2>
+                <a href='https://www.figma.com/community/file/1209960296465522132'>design credit</a>
+            </div>
         </footer>
         </>
     )
