@@ -16,10 +16,12 @@ html {
 }
 
 body {
+    @include flex-column;
     height: 100%;
 }
 
 main {
+    flex-grow: 1;
     padding: 5%;
 }
 
@@ -59,5 +61,34 @@ nav {
 
     .icon.right {
         border-left: solid $nav-lines $font-color;
+    }
+}
+
+footer {
+    @include flex-row;
+    @include body-font;
+    justify-content: space-between;
+    padding: 5%;
+    border-top: solid $nav-lines $font-color;
+    color: $font-color;
+    align-items: center;
+
+    h2 {
+        @include body-font;
+    }
+
+    .footer-items {
+        @include flex-row;
+        gap: 15%;
+        text-transform: capitalize;
+
+        a {
+            text-decoration: none;
+            color: $font-color;    
+        }
+    }
+
+    .icon {
+        font-size: 5rem;
     }
 }
