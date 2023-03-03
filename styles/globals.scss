@@ -90,5 +90,8 @@ footer {
 
     .icon {
         font-size: 5rem;
-    }
+        padding: 2%;
+        border: dotted 12px $font-color;
+        border-radius: 50%;
+    }      
 }

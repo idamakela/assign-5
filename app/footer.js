@@ -13,7 +13,7 @@ export default function FooterLayout() {
                 <Link href='/contact'>Contact</Link>
             </div>
             <FaRegSmileBeam className='icon'/>
-            <h2>&copy; Ida Mäkelä.</h2>
+            <h2>&copy; Ida Mäkelä</h2>
         </footer>
         </>
     )
