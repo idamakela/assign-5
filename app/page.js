@@ -1,6 +1,7 @@
 import { FaLaptopCode } from 'react-icons/fa'
 import Image from 'next/image'
-import pic from '../public/todd-kent-unsplash.jpg'
+// import pic from '../public/todd-kent-unsplash.jpg'
+import pic from '../public/jason-richard-unsplash.jpg'
 
 export default function Home() {
   return (
@@ -17,11 +18,10 @@ export default function Home() {
             src={pic}
             width={500}
             height={500}
-            alt='Landscape photo of sunflowers on a field with the rising sun in the distance. Taken from Todd Kent on Unsplash.'
             className='pic'
+            alt='Close up yellow rubber ducks in a blue small pool of water. Taken from Jason Richard on Unsplash.'
         />
-        <p>Photo by <a href="https://unsplash.com/@churchoftodd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">todd kent</a> on <a href="https://unsplash.com/photos/kW1P8R-UoWI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
-        {/*the balls pic: <p>Photo by <a href="https://unsplash.com/@ninjason?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Leung</a> on <a href="https://unsplash.com/wallpapers/colors/yellow?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p> */}
+        <p>Photo by <a href="https://unsplash.com/es/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Richard</a> on <a href="https://unsplash.com/photos/VTvnoNBowZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
     </div>
 
         
