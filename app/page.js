@@ -1,7 +1,7 @@
 import { FaLaptopCode } from 'react-icons/fa'
 import Image from 'next/image'
-// import pic from '../public/todd-kent-unsplash.jpg'
 import pic from '../public/jason-richard-unsplash.jpg'
+import '../styles/landing-page.scss'
 
 export default function Home() {
   return (
@@ -22,9 +22,7 @@ export default function Home() {
             alt='Close up yellow rubber ducks in a blue small pool of water. Taken from Jason Richard on Unsplash.'
         />
         <p className='ref'>Photo by <a href="https://unsplash.com/es/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason Richard</a> on <a href="https://unsplash.com/photos/VTvnoNBowZs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
-    </div>
-
-        
+    </div> 
     </>
   )
 }

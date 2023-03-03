@@ -1,0 +1,49 @@
+@import 'mixins';
+@import 'variables';
+
+body {
+    background-color: $background-mono;
+}
+
+.landing-container {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+
+    .icon {
+        font-size: 20rem;
+        color: $font-color;
+    }
+}
+
+.landing-text {
+    color: $font-color;
+    margin-bottom: 5%;
+    
+    h1 {
+        @include statement-font;
+    }
+    
+    h2 {
+        @include title-font;
+        max-width: 1400px;
+    }
+}
+
+.landing-img {
+    .pic {
+        width: 100%;
+        height: 100%;
+        border-radius: 2.4rem;
+    }
+
+    .ref {
+        font-size: 1rem;
+        margin: 1%;
+        text-align: end;
+
+        a {
+            color:$font-color;
+        }
+    }
+}

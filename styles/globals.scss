@@ -1,11 +1,5 @@
 @import 'mixins';
-
-$background-mono: #FFE348;
-$background-multi: #FFB7D8;
-$font-color: #094BAC;
-$base-color: #FFFFFF;
-
-$nav-lines: 3.5px;
+@import 'variables';
 
 :root {
     font-size: 16px;
@@ -22,7 +16,7 @@ html {
 }
 
 body {
-    background-color: $background-mono;
+    height: 100%;
 }
 
 main {
@@ -35,7 +29,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-bottom: solid $nav-lines $font-color;
-    
+
+    a {
+        text-decoration: none;
+        color: $font-color;
+    }
 
     .nav-left {
         @include flex-row;
@@ -46,12 +44,7 @@ nav {
         @include flex-row;
         gap: 25%;
         padding: 10%;
-        
-        a {
-            @include body-font;
-            text-decoration: none;
-            color: $font-color;
-        }
+        @include body-font;
     }
 
     .icon {
@@ -66,48 +59,5 @@ nav {
 
     .icon.right {
         border-left: solid $nav-lines $font-color;
-    }
-}
-
-.landing-container {
-    @include flex-row;
-    align-items: center;
-    justify-content: space-between;
-
-    .icon {
-        font-size: 20rem;
-        color: $font-color;
-    }
-}
-
-.landing-text {
-    color: $font-color;
-    margin-bottom: 5%;
-    
-    h1 {
-        @include statement-font;
-    }
-    
-    h2 {
-        @include title-font;
-        max-width: 1400px;
-    }
-}
-
-.landing-img {
-    .pic {
-        width: 100%;
-        height: 100%;
-        border-radius: 2.4rem;
-    }
-
-    .ref {
-        font-size: 1rem;
-        margin: 1%;
-        text-align: end;
-
-        a {
-            color:$font-color;
-        }
     }
 }

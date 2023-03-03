@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa'
 
-function underline()  {
+function underline(item)  {
     //on mouseenter add styling: border-bottom: solid 5px $font-color; on link tags
+    //if u are on a page, underline should be active 
 }
 
 export default function NavLayout() {
@@ -10,7 +11,11 @@ export default function NavLayout() {
         <>
         <nav>
             <div className='nav-left'>
-                <div className='icon left'><FaRegSmileBeam /></div>
+                <div className='icon left'>
+                    <Link href='/'>
+                        <FaRegSmileBeam />
+                    </Link>
+                </div>
                 <div className='nav-items'>
                     <Link href='/'>Home</Link>
                     <Link href='/projects'>Projects</Link>
