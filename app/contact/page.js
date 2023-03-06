@@ -1,4 +1,5 @@
 import '../../styles/contact.scss'
+import Form from './form'
 
 export default function Contact() {
     return (
@@ -11,7 +12,7 @@ export default function Contact() {
         </div>
 
         <div className='form-container'>
-            form container
+            <Form />
         </div>
         <p className='img-ref'>Photo by <a href="https://unsplash.com/@emilybernal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emily Bernal</a> on <a href="https://unsplash.com/photos/r2F5ZIEUPtk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
         </>
