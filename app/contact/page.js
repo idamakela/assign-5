@@ -1,5 +1,6 @@
 import '../../styles/contact.scss'
 import Form from './form'
+import { FaEnvelopeOpenText } from 'react-icons/fa'
 
 export default function Contact() {
     return (
@@ -12,6 +13,9 @@ export default function Contact() {
         </div>
 
         <div className='form-container'>
+            <div className='cta'>
+                <h2>get<br/>in<br/>touch</h2>
+            </div>
             <Form />
         </div>
         <p className='img-ref'>Photo by <a href="https://unsplash.com/@emilybernal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emily Bernal</a> on <a href="https://unsplash.com/photos/r2F5ZIEUPtk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</p>
