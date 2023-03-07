@@ -1,3 +1,13 @@
+import data from './data.js'
+
 export default function SpecProject() {
-    return <h1>this is a specific project page</h1>
+
+    let projects = data;
+    console.log(projects)
+
+    return (
+        <>
+            <h1>Preview of projects</h1>
+        </>
+    )
 }
