@@ -4,3 +4,26 @@
 body {
     background-color: $background-multi;
 }
+
+.projects-container {
+    @include flex-row;
+}
+
+.projects-text {
+    color: $font-color;
+    margin-bottom: $base-indent;
+    
+    h2 {
+        @include statement-font;
+    }
+    
+    h3 {
+        @include title-font;
+        max-width: 1400px;
+    }
+}
+
+.projects-preview-container {
+    @include flex-column;
+    align-items: center;
+}

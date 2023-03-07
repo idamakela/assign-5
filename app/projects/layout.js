@@ -1,5 +1,17 @@
 import '../../styles/projects.scss'
 
-export default function Project() {
-    return <h1>this is the project page</h1>
+export default function Project({ children }) {
+    return (
+        <>
+        <div className="projects-container">
+            <div className="projects-text">
+                <h2>Projects.</h2>
+                <h3>*...some short description about my projects...*</h3>
+            </div>
+        </div>
+        <div className='projects-preview-container'>
+            { children }
+        </div>
+        </>
+    )
 }
