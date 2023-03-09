@@ -52,7 +52,7 @@ const data = [
     {
         title: 'five-portfolio',
         course: 'Frontend programming 2022',
-        desc: '',
+        desc: 'Basic portfolio using JQuery, HTML and CSS.',
         tools: 'JavaScript (plugins, JQuery), HTML, CSS',
         img: '',
         demo: '',

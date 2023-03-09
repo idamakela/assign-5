@@ -35,7 +35,7 @@ body {
     background-color: $font-color;
     border-radius: 2.4rem;
     color: $base-color;
-    min-height: 300px;
+    min-height: 350px;
 
     &.odd {
         flex-direction: row-reverse;
@@ -49,16 +49,19 @@ body {
 
         .tools {
             justify-self: end;
+            margin-top: auto;
+            font-size: 1.6rem;
         }
     }
 
 
     h3 {
         @include big-title-font;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
     }
 
     p {
         @include big-body-font;
+        margin-bottom: 1%;
     }
 }
