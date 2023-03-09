@@ -64,4 +64,14 @@ body {
         @include big-body-font;
         margin-bottom: 1%;
     }
+
+    .project-img {
+        max-width: 40%;
+        
+        img {
+            border-radius: 2.4rem;
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
