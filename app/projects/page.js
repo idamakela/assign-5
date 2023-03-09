@@ -6,8 +6,6 @@ function isOdd(number) {
 
 export default function SpecProject() {
     
-    console.log(data)
-
     return (
         <div className='projects'>
             {data.map((project, index) => (
@@ -16,6 +14,18 @@ export default function SpecProject() {
                         <h3>{project.title}</h3>
                         <p>{project.course}</p>
                         <p>{project.desc}</p>
+                        <div className='btn'>
+                            {project.live ? (
+                                <a href={project.demo}><button>Demo</button></a>
+                            ) : (
+                                <button disabled>Demo</button>
+                            )}
+                            {project.public ? (
+                                <a href={project.github}><button>GitHub</button></a>
+                            ) : (
+                                <button disabled>GitHub</button>
+                            )}
+                        </div>
                         <p className='tools'>{project.tools}</p>
                     </div>
 

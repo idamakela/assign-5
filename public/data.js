@@ -55,8 +55,8 @@ const data = [
         desc: 'Basic portfolio using JQuery, HTML and CSS.',
         tools: 'JavaScript (plugins, JQuery), HTML, CSS',
         img: './img/five-portfolio.png',
-        demo: '',
-        live: false,
+        demo: 'https://idamakela.github.io/',
+        live: true,
         github: 'https://github.com/idamakela/five-portfolio',
         public: false,
         keywords: []

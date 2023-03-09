@@ -43,6 +43,22 @@ body {
 
     }
 
+    button {
+        //should prob be same as on contact page
+        border: none;
+        padding: $base-indent calc($base-indent*2);
+        color: $font-color;
+        background-color: $base-color;
+        border-radius: 2.4rem;
+        margin: $base-indent;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: $disabled-color;
+            color: $base-color;
+        }
+    }
+
     .project-text {
         @include flex-column;
         max-width: 65%;
