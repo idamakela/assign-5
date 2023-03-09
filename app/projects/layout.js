@@ -9,9 +9,7 @@ export default function Project({ children }) {
                 <h3>*...some short description about my projects...*</h3>
             </div>
         </div>
-        <div className='projects-preview-container'>
-            { children }
-        </div>
+        { children }
         </>
     )
 }

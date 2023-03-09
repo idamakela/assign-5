@@ -1,49 +1,30 @@
-import data from './data.js'
-console.log(data)
+import data from '../../public/data.js'
+
+function isOdd(number) {
+    return number % 2 !== 0;
+}
 
 export default function SpecProject() {
-
+    
+    console.log(data)
 
     return (
-        <>
-        <div class="projects-grid">
+        <div className='projects'>
+            {data.map((project, index) => (
+                <div className={`project ${isOdd(index) ? 'odd' : ''}`}>
+                    <div key={index} className='project-text'>
+                        <h3>{project.title}</h3>
+                        <p>{project.course}</p>
+                        <p>{project.desc}</p>
+                        <p className='tools'>{project.tools}</p>
+                    </div>
 
-            <div class="div1 project">
-                <h3>Title</h3>
-                <p>desc jsdfaw fjsaifeo jdskaöf</p>
-            </div>
-            <div class="div2 project"> </div>
-
-
-            <div class="div3 project">
-                <h3>Title</h3>
-                <p>desc jsdfaw fjsaifeo jdskaöf</p>
-            </div>
-            <div class="div4 project"></div>
-
-
-            <div class="div5 project">
-                <h3>Title</h3>
-                <p>desc jsdfaw fjsaifeo jdskaöf</p>
-            </div>
-            <div class="div6 project"></div>
-
-
-            <div class="div7 project">
-                <h3>Title</h3>
-                <p>desc jsdfaw fjsaifeo jdskaöf</p>
-            </div>
-            <div class="div8 project"></div>
-
-
-            <div class="div9 project">
-                <h3>Title</h3>
-                <p>desc jsdfaw fjsaifeo jdskaöf</p>
-            </div>
-            <div class="div10 project"> </div>
+                    <div className='project-img'>
+                        <img src={project.img}></img>
+                    </div>
+                </div>
+            ))}
         </div>
-        </>
     )
 }
 
-//function for rendering containers and its content (img, title,)

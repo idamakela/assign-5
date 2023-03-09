@@ -19,8 +19,18 @@
     font-weight: 800;
 }
 
+@mixin big-title-font {
+    font-size: 4.9rem;
+    font-weight: 700;
+}
+
 @mixin title-font {
     font-size: 2.8rem;
+    font-weight: 600;
+}
+
+@mixin big-body-font {
+    font-size: 2rem;
     font-weight: 600;
 }
 
