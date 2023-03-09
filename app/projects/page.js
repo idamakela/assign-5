@@ -11,3 +11,5 @@ export default function SpecProject() {
         </>
     )
 }
+
+//function for rendering containers and its content (img, title,)
