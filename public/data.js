@@ -54,7 +54,7 @@ const data = [
         course: 'Frontend programming 2022',
         desc: 'Basic portfolio using JQuery, HTML and CSS.',
         tools: 'JavaScript (plugins, JQuery), HTML, CSS',
-        img: '',
+        img: './img/five-portfolio.png',
         demo: '',
         live: false,
         github: 'https://github.com/idamakela/five-portfolio',
