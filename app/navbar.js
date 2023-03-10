@@ -17,10 +17,10 @@ export default function NavLayout() {
                     </Link>
                 </div>
                 <div className='nav-items'>
-                    <Link href='/'>Home</Link>
-                    <Link href='/projects'>Projects</Link>
-                    <Link href='/about'>About</Link>
-                    <Link href='/contact'>Contact</Link>
+                    <Link href='/' className='hover'>Home</Link>
+                    <Link href='/projects' className='hover'>Projects</Link>
+                    <Link href='/about' className='hover'>About</Link>
+                    <Link href='/contact' className='hover'>Contact</Link>
                 </div>
             </div>
             <div className='icon right'><FaGripLines /></div>
