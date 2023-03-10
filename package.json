@@ -1,19 +1,23 @@
 {
-  "name": "assign-5",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "^13.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.7.1"
-  },
-  "devDependencies": {
-    "sass": "^1.58.3"
-  }
+    "name": "assign-5",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^13.2.1",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-icons": "^4.7.1"
+    },
+    "devDependencies": {
+        "eslint": "^8.35.0",
+        "eslint-config-prettier": "^8.7.0",
+        "eslint-plugin-react": "^7.32.2",
+        "prettier": "2.8.4",
+        "sass": "^1.58.3"
+    }
 }

@@ -36,6 +36,7 @@ nav {
     a {
         text-decoration: none;
         color: $font-color;
+        border-bottom: solid 5px transparent;
     }
 
     .nav-left {
@@ -84,7 +85,8 @@ footer {
 
         a {
             text-decoration: none;
-            color: $font-color;    
+            color: $font-color;
+            border-bottom: solid 5px transparent; 
         }
     }
 
@@ -98,8 +100,12 @@ footer {
     }
 
     .icon {
-        font-size: 5rem;
-        padding: 2%;
+        @include flex-column;
+        justify-content: center;
+        align-items: center;
+        color: $font-color;
+        font-size: 3em;
+        padding: 0.5em;
         border: dotted 12px $font-color;
         border-radius: 50%;
     }      
@@ -116,9 +122,12 @@ footer {
 }
 
 .hover {
-    border-bottom: solid 5px transparent;
     &:hover {
         // text-decoration: underline;
         border-bottom: solid 5px $font-color;
     }
+}
+
+.active {
+    border-bottom: solid 5px $font-color;
 }

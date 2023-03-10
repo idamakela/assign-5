@@ -1,29 +1,57 @@
-'use client'
-import Link from 'next/link'
-import { usePathname  } from 'next/navigation'
-import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa'
+'use client';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa';
 
 export default function NavLayout() {
-    const pathname = usePathname ();
+    const pathname = usePathname();
 
     return (
         <>
-        <nav>
-            <div className='nav-left'>
-                <div className='icon left'>
-                    <Link href='/'>
-                        <FaRegSmileBeam />
-                    </Link>
+            <nav>
+                <div className="nav-left">
+                    <div className="icon left">
+                        <Link href="/">
+                            <FaRegSmileBeam />
+                        </Link>
+                    </div>
+                    <div className="nav-items">
+                        <Link
+                            href="/"
+                            className={pathname === '/' ? 'active' : 'hover'}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            href="/projects"
+                            className={
+                                pathname === '/projects' ? 'active' : 'hover'
+                            }
+                        >
+                            Projects
+                        </Link>
+                        <Link
+                            href="/about"
+                            className={
+                                pathname === '/about' ? 'active' : 'hover'
+                            }
+                        >
+                            About
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className={
+                                pathname === '/contact' ? 'active' : 'hover'
+                            }
+                        >
+                            Contact
+                        </Link>
+                    </div>
                 </div>
-                <div className='nav-items'>
-                    <Link href='/' className={pathname === '/' ? 'active' : 'hover'}>Home</Link>
-                    <Link href='/projects' className={pathname === '/projects' ? 'active' : 'hover'}>Projects</Link>
-                    <Link href='/about' className={pathname === '/about' ? 'active' : 'hover'}>About</Link>
-                    <Link href='/contact' className={pathname === '/contact' ? 'active' : 'hover'}>Contact</Link>
+                <div className="icon right">
+                    <FaGripLines />
                 </div>
-            </div>
-            <div className='icon right'><FaGripLines /></div>
-        </nav>
+            </nav>
         </>
-    )
+    );
 }

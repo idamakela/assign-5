@@ -12,7 +12,9 @@ export default function FooterLayout() {
                 <Link href='/about' className='hover'>About</Link>
                 <Link href='/contact' className='hover'>Contact</Link>
             </div>
-            <FaRegSmileBeam className='icon'/>
+            <div className='icon'>
+                <FaRegSmileBeam/>
+            </div>
             <div className='footer-items right'>
                 <h2>&copy; Ida Mäkelä</h2>
                 <a href='https://www.figma.com/community/file/1209960296465522132' className='hover'>design credit</a>
