@@ -52,6 +52,7 @@ body {
         border-radius: 2.4rem;
         margin: $base-indent;
         cursor: pointer;
+        font-size: 2rem;
 
         &:disabled {
             background-color: $disabled-color;
