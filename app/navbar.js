@@ -1,7 +1,11 @@
-import Link from 'next/link';
+'use client'
+import Link from 'next/link'
+import { usePathname  } from 'next/navigation'
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa'
 
 export default function NavLayout() {
+    const pathname = usePathname ();
+
     return (
         <>
         <nav>
@@ -12,10 +16,10 @@ export default function NavLayout() {
                     </Link>
                 </div>
                 <div className='nav-items'>
-                    <Link href='/' className='hover'>Home</Link>
-                    <Link href='/projects' className='hover'>Projects</Link>
-                    <Link href='/about' className='hover'>About</Link>
-                    <Link href='/contact' className='hover'>Contact</Link>
+                    <Link href='/' className={pathname === '/' ? 'active' : 'hover'}>Home</Link>
+                    <Link href='/projects' className={pathname === '/projects' ? 'active' : 'hover'}>Projects</Link>
+                    <Link href='/about' className={pathname === '/about' ? 'active' : 'hover'}>About</Link>
+                    <Link href='/contact' className={pathname === '/contact' ? 'active' : 'hover'}>Contact</Link>
                 </div>
             </div>
             <div className='icon right'><FaGripLines /></div>
