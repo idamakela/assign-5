@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -51,7 +52,7 @@ nav {
 
     .icon {
         font-size: 4rem;
-        padding: 0.5em 1.2em;
+        padding: 0.6em 1.2em;
         color: $font-color;
     }
 
@@ -115,7 +116,9 @@ footer {
 }
 
 .hover {
+    border-bottom: solid 5px transparent;
     &:hover {
-        text-decoration: underline;
+        // text-decoration: underline;
+        border-bottom: solid 5px $font-color;
     }
 }
