@@ -14,6 +14,8 @@ export const metadata = {
     title: 'Ida Mäkelä | FrontEnd / App Developer | Portfolio',
     description:
         'Welcome to the personal portfolio of a Frontend / App developer!',
+    keywords:
+        'developer, frontend, app, portfolio, projects, work, contact, about',
 };
 
 export default function RootLayout({ children }) {

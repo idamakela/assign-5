@@ -4,8 +4,8 @@ import Form from './form';
 export default function Contact() {
     return (
         <>
-            <div className="contact-container">
-                <div className="contact-text">
+            <div className="container">
+                <div className="text">
                     <h2>Contact.</h2>
                     <h3>
                         Want to know more about my projects, or simply have a

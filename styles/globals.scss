@@ -6,9 +6,9 @@
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -19,16 +19,15 @@ html {
 body {
     @include flex-column;
     height: 100%;
-    
+
     &.yellow {
         background-color: $background-yellow;
     }
-    
+
     &.pink {
         background-color: $background-pink;
     }
 }
-
 
 main {
     flex-grow: 1;
@@ -36,16 +35,16 @@ main {
 }
 
 nav {
+    align-items: center;
+    border-bottom: solid $nav-lines $font-color;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    border-bottom: solid $nav-lines $font-color;
 
     a {
-        text-decoration: none;
-        color: $font-color;
         border-bottom: solid 5px transparent;
+        color: $font-color;
+        text-decoration: none;
     }
 
     .nav-left {
@@ -54,16 +53,16 @@ nav {
     }
 
     .nav-items {
+        @include body-font;
         @include flex-row;
         gap: 25%;
-        padding: 10%;
-        @include body-font;
+        padding: 5% 10%;
     }
 
     .icon {
-        font-size: 4rem;
-        padding: 0.6em 1.2em;
         color: $font-color;
+        font-size: 4rem;
+        padding: 0.4em 0.8em;
     }
 
     .icon.left {
@@ -76,13 +75,13 @@ nav {
 }
 
 footer {
-    @include flex-row;
     @include body-font;
-    justify-content: space-between;
-    padding: calc($base-indent/2) $base-indent;
+    @include flex-row;
+    align-items: center;
     border-top: solid $nav-lines $font-color;
     color: $font-color;
-    align-items: center;
+    justify-content: space-between;
+    padding: calc($base-indent/2) $base-indent;
 
     h2 {
         @include title-font;
@@ -93,9 +92,9 @@ footer {
         text-transform: capitalize;
 
         a {
-            text-decoration: none;
-            color: $font-color;
             border-bottom: solid 5px transparent;
+            color: $font-color;
+            text-decoration: none;
         }
     }
 
@@ -110,13 +109,31 @@ footer {
 
     .icon {
         @include flex-column;
-        justify-content: center;
         align-items: center;
+        border-radius: 50%;
+        border: dotted 12px $font-color;
         color: $font-color;
         font-size: 3em;
+        justify-content: center;
         padding: 0.5em;
-        border: dotted 12px $font-color;
-        border-radius: 50%;
+    }
+}
+
+.container {
+    @include flex-row;
+
+    .text {
+        color: $font-color;
+        margin-bottom: $base-indent;
+
+        h2 {
+            @include statement-font;
+        }
+
+        h3 {
+            @include title-font;
+            max-width: 1400px;
+        }
     }
 }
 
@@ -124,6 +141,7 @@ footer {
     font-size: 1rem;
     margin: 1%;
     text-align: end;
+    color: $font-color-dark;
 
     a {
         color: $font-color;
@@ -132,11 +150,33 @@ footer {
 
 .hover {
     &:hover {
-        // text-decoration: underline;
         border-bottom: solid 5px $font-color;
     }
 }
 
 .active {
     border-bottom: solid 5px $font-color;
+}
+
+button {
+    background-color: $background-yellow;
+    border-radius: 2.4rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--inter-font);
+    text-transform: capitalize;
+    transition: all 0.25s ease-in;
+}
+
+button:not(:disabled):hover {
+    background-color: $background-pink;
+    box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+        -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+        12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+        -10px -7px 27px 1px #8e5cff, -4px 3px 9px 7px rgba(6, 47, 107, 0);
+}
+
+button:disabled {
+    background-color: $disabled-color;
+    color: $base-color;
 }

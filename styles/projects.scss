@@ -1,24 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-.projects-container {
-    @include flex-row;
-}
-
-.projects-text {
-    color: $font-color;
-    margin-bottom: $base-indent;
-
-    h2 {
-        @include statement-font;
-    }
-
-    h3 {
-        @include title-font;
-        max-width: 1400px;
-    }
-}
-
 .projects {
     @include flex-column;
     gap: 20px;
@@ -26,43 +8,48 @@
 
 .project {
     @include flex-row;
-    justify-content: space-between;
-    padding: 4em;
     background-color: $font-color;
-    border-radius: 2.4rem;
+    border-radius: $base-radius;
     color: $base-color;
+    justify-content: space-between;
     min-height: 350px;
+    padding: 4em;
 
-    &.odd {
+    &#odd {
         flex-direction: row-reverse;
         text-align: end;
+
+        .btn {
+            justify-content: end;
+        }
+    }
+
+    .btn {
+        @include flex-row;
+        justify-content: start;
+        margin-top: $base-indent;
     }
 
     button {
-        //should prob be same as on contact page
-        border: none;
-        padding: $base-indent calc($base-indent * 2);
-        color: $font-color;
-        background-color: $base-color;
-        border-radius: 2.4rem;
+        font-size: 1.8rem;
+        padding: 1.5em 6em;
         margin: $base-indent;
-        cursor: pointer;
-        font-size: 2rem;
 
-        &:disabled {
-            background-color: $disabled-color;
-            color: $base-color;
+        a {
+            text-decoration: none;
+            color: $font-color-dark;
         }
     }
 
     .project-text {
         @include flex-column;
-        max-width: 65%;
+        width: fit-content;
+        flex-grow: 1;
 
         .tools {
+            font-size: 1.6rem;
             justify-self: end;
             margin-top: auto;
-            font-size: 1.6rem;
         }
     }
 
@@ -77,10 +64,9 @@
     }
 
     .project-img {
-        max-width: 40%;
+        max-width: 30%;
 
         img {
-            border-radius: 2.4rem;
             height: 100%;
             width: 100%;
         }

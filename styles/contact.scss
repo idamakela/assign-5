@@ -2,53 +2,41 @@
 @import 'variables';
 
 .contact-container {
-    @include flex-row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1%;
 }
 
 .contact-text {
-    color: $font-color;
-    margin-bottom: $base-indent;
     text-align: center;
-
-    h2 {
-        @include statement-font;
-    }
-
-    h3 {
-        @include title-font;
-        max-width: 1400px;
-    }
 }
 
 .form-container {
     @include flex-row;
-    background-image: url('../public/emily-bernal-r2F5ZIEUPtk-unsplash.jpg');
+    align-items: center;
+    background-color: $font-color;
+    background: url('../public/emily-bernal-r2F5ZIEUPtk-unsplash.jpg') no-repeat
+        center center;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-color: $font-color;
+    border-radius: $base-radius;
     color: $base-color;
-    padding: $base-indent;
-    border-radius: 2.4rem;
     justify-content: flex-end;
-    align-items: center;
+    padding: $base-indent;
+    /*max-height: 100vh;*/
 
     .cta {
+        @include flex-column;
+        border-radius: $base-radius 0 0 $base-radius;
+        border-right: none;
+        border: solid 5px $font-color;
         color: $font-color;
         font-size: 10rem;
         font-weight: 600;
-        text-transform: capitalize;
-        @include flex-column;
         justify-content: center;
-        border: solid 5px $font-color;
-        border-right: none;
-        border-radius: 2.4rem 0 0 2.4rem;
-        max-height: 7em;
+        /*max-height: 7em;*/
         min-width: 80%;
         position: absolute;
+        text-transform: capitalize;
         z-index: 1;
 
         h2 {
@@ -58,55 +46,41 @@
 
     form {
         @include flex-column;
-        min-width: 650px;
         background-color: $font-color;
+        border-radius: $base-radius;
+        min-width: 650px;
         padding: $base-indent;
-        border-radius: 2.4rem;
         position: relative;
         z-index: 10;
 
         input,
         textarea {
             background-color: $base-color;
-            font-size: 2rem;
+            border-radius: $base-radius;
             border: none;
-            border-radius: 2.4rem;
-            padding: $base-indent;
             font-family: var(--inter-font);
+            font-size: 2rem;
+            padding: $base-indent;
+        }
+
+        input {
+            margin-bottom: $base-indent;
         }
 
         textarea {
             margin-bottom: calc($base-indent * 2);
             max-width: 600px;
-            min-height: 350px;
+            min-height: 300px;
         }
 
         label {
-            font-size: 2rem;
-            padding: $base-indent;
-            border-radius: 2.4rem;
+            font-size: 1.8rem;
+            margin: 0 0 $base-indent $base-indent;
         }
 
         button {
-            cursor: pointer;
-            border: none;
-            padding: $base-indent;
             font-size: 2rem;
-            border-radius: 2.4rem;
-            background-color: $background-yellow;
-            transition: all 0.25s ease-in;
-            text-transform: capitalize;
-            font-family: var(--inter-font);
-
-            &:hover {
-                background-color: $background-pink;
-                // -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -4px 3px 9px 7px rgba(6,47,107,0);
-                box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
-                    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
-                    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
-                    -10px -7px 27px 1px #8e5cff,
-                    -4px 3px 9px 7px rgba(6, 47, 107, 0);
-            }
+            padding: $base-indent;
         }
     }
 }
