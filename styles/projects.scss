@@ -1,10 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-body {
-    background-color: $background-multi;
-}
-
 .projects-container {
     @include flex-row;
 }
@@ -12,11 +8,11 @@ body {
 .projects-text {
     color: $font-color;
     margin-bottom: $base-indent;
-    
+
     h2 {
         @include statement-font;
     }
-    
+
     h3 {
         @include title-font;
         max-width: 1400px;
@@ -40,13 +36,12 @@ body {
     &.odd {
         flex-direction: row-reverse;
         text-align: end;
-
     }
 
     button {
         //should prob be same as on contact page
         border: none;
-        padding: $base-indent calc($base-indent*2);
+        padding: $base-indent calc($base-indent * 2);
         color: $font-color;
         background-color: $base-color;
         border-radius: 2.4rem;
@@ -71,7 +66,6 @@ body {
         }
     }
 
-
     h3 {
         @include big-title-font;
         margin-bottom: 2%;
@@ -84,7 +78,7 @@ body {
 
     .project-img {
         max-width: 40%;
-        
+
         img {
             border-radius: 2.4rem;
             height: 100%;

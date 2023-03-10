@@ -11,7 +11,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/one-webpage',
         public: true,
-        keywords: ['responsive', 'webpage', 'no javascript']
+        keywords: ['responsive', 'webpage', 'no javascript'],
     },
     {
         title: 'two-jsGame',
@@ -23,7 +23,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/two-jsGame',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'three-responsiveWebGame',
@@ -35,7 +35,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/three-responsiveWebGame',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'four-api',
@@ -47,7 +47,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/four-api',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'five-portfolio',
@@ -59,7 +59,7 @@ const data = [
         live: true,
         github: 'https://github.com/idamakela/five-portfolio',
         public: false,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'assign-1',
@@ -71,7 +71,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/assign-1',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'assign-2',
@@ -83,7 +83,7 @@ const data = [
         live: false,
         github: 'https://github.com/idamakela/assign-2',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'assign-3',
@@ -95,7 +95,7 @@ const data = [
         live: true,
         github: 'https://github.com/idamakela/assign-3',
         public: true,
-        keywords: []
+        keywords: [],
     },
     {
         title: 'assign-4',
@@ -107,8 +107,8 @@ const data = [
         live: true,
         github: 'https://github.com/idamakela/assign-4',
         public: true,
-        keywords: []
-    }
-]
+        keywords: [],
+    },
+];
 
 export default data;

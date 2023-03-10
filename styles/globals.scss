@@ -19,7 +19,16 @@ html {
 body {
     @include flex-column;
     height: 100%;
+    
+    &.yellow {
+        background-color: $background-yellow;
+    }
+    
+    &.pink {
+        background-color: $background-pink;
+    }
 }
+
 
 main {
     flex-grow: 1;
@@ -41,9 +50,9 @@ nav {
 
     .nav-left {
         @include flex-row;
-        align-items: center
+        align-items: center;
     }
-    
+
     .nav-items {
         @include flex-row;
         gap: 25%;
@@ -86,7 +95,7 @@ footer {
         a {
             text-decoration: none;
             color: $font-color;
-            border-bottom: solid 5px transparent; 
+            border-bottom: solid 5px transparent;
         }
     }
 
@@ -108,7 +117,7 @@ footer {
         padding: 0.5em;
         border: dotted 12px $font-color;
         border-radius: 50%;
-    }      
+    }
 }
 
 .img-ref {
@@ -117,7 +126,7 @@ footer {
     text-align: end;
 
     a {
-        color:$font-color;
+        color: $font-color;
     }
 }
 

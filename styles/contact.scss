@@ -1,10 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-body {
-    background-color: $background-multi;
-}
-
 .contact-container {
     @include flex-row;
     align-items: center;
@@ -16,11 +12,11 @@ body {
     color: $font-color;
     margin-bottom: $base-indent;
     text-align: center;
-    
+
     h2 {
         @include statement-font;
     }
-    
+
     h3 {
         @include title-font;
         max-width: 1400px;
@@ -64,47 +60,52 @@ body {
         @include flex-column;
         min-width: 650px;
         background-color: $font-color;
-        padding: $base-indent; 
+        padding: $base-indent;
         border-radius: 2.4rem;
         position: relative;
         z-index: 10;
 
-        input, textarea {
+        input,
+        textarea {
             background-color: $base-color;
             font-size: 2rem;
             border: none;
             border-radius: 2.4rem;
-            padding: $base-indent; 
+            padding: $base-indent;
             font-family: var(--inter-font);
         }
 
         textarea {
-            margin-bottom: calc($base-indent*2);
+            margin-bottom: calc($base-indent * 2);
             max-width: 600px;
             min-height: 350px;
         }
 
         label {
             font-size: 2rem;
-            padding: $base-indent; 
+            padding: $base-indent;
             border-radius: 2.4rem;
         }
 
         button {
             cursor: pointer;
             border: none;
-            padding: $base-indent; 
+            padding: $base-indent;
             font-size: 2rem;
             border-radius: 2.4rem;
-            background-color: $background-mono;
+            background-color: $background-yellow;
             transition: all 0.25s ease-in;
             text-transform: capitalize;
             font-family: var(--inter-font);
-            
+
             &:hover {
-                background-color: $background-multi;
-                // -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -4px 3px 9px 7px rgba(6,47,107,0); 
-                box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -4px 3px 9px 7px rgba(6,47,107,0);           
+                background-color: $background-pink;
+                // -webkit-box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, -4px 3px 9px 7px rgba(6,47,107,0);
+                box-shadow: 5px 5px 15px 5px #ff8080, -9px 5px 15px 5px #ffe488,
+                    -7px -5px 15px 5px #8cff85, 12px -5px 15px 5px #80c7ff,
+                    12px 10px 15px 7px #e488ff, -10px 10px 15px 7px #ff616b,
+                    -10px -7px 27px 1px #8e5cff,
+                    -4px 3px 9px 7px rgba(6, 47, 107, 0);
             }
         }
     }

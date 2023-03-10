@@ -1,10 +1,9 @@
+'use client';
 import { Inter } from 'next/font/google';
-//import dyanamic from 'next/dynamic'
+import { usePathname } from 'next/navigation';
 import NavLayout from './navbar';
 import FooterLayout from './footer';
 import '../styles/globals.scss';
-
-//const DynamicNavBar = dyanamic(() => import('./navbar'), {ssr: false});
 
 const inter = Inter({
     variable: '--inter-font',
@@ -18,12 +17,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const pathname = usePathname();
+
     return (
-        <html lang="en">
-            {/* <head>
-            <link rel="icon" type="image/svg+js" href="../public/face-smiling-beam-regular.svg" />
-        </head> */}
-            <body className={inter.className}>
+        <html lang="en" className={inter.className}>
+            <body
+                className={
+                    pathname === '/projects' || pathname === '/contact'
+                        ? 'pink'
+                        : 'yellow'
+                }
+            >
                 <NavLayout />
                 <main>{children}</main>
                 <FooterLayout />

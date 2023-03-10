@@ -1,10 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-body {
-    background-color: $background-mono;
-}
-
 .landing-container {
     @include flex-row;
     align-items: center;
@@ -19,11 +15,11 @@ body {
 .landing-text {
     color: $font-color;
     margin-bottom: $base-indent;
-    
+
     h1 {
         @include statement-font;
     }
-    
+
     h2 {
         @include title-font;
         max-width: 1400px;
