@@ -27,13 +27,12 @@
     .btn {
         @include flex-row;
         justify-content: start;
-        margin-top: $base-indent;
     }
 
     button {
         font-size: 1.8rem;
         padding: 1.5em 6em;
-        margin: $base-indent;
+        margin: $base-indent calc($base-indent/2);
 
         a {
             text-decoration: none;
