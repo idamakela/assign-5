@@ -11,7 +11,7 @@ export default function NavLayout() {
             <nav>
                 <div className="nav-left">
                     <div className="icon left">
-                        <Link href="/">
+                        <Link href={pathname === '/' ? '' : '/'}>
                             <FaRegSmileBeam />
                         </Link>
                     </div>
