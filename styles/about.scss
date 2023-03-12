@@ -22,16 +22,30 @@
         background-color: $font-color;
         border-radius: $base-radius;
         color: $base-color;
-        min-height: 300px;
         padding: 4em 8em;
 
         h3 {
             @include title-font;
-            margin-bottom: 1%;
+            border-bottom: solid 5px $base-color;
+            max-width: fit-content;
+        }
+
+        a {
+            margin-top: $base-indent;
+            text-decoration: none;
+            color: inherit;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         p {
             @include body-font;
+            line-height: 1.5;
+            margin-left: 2%;
+            margin-top: $base-indent;
         }
     }
 
