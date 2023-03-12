@@ -1,10 +1,16 @@
 'use client';
+import { useState } from 'react';
+import NavItems from './navItems';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa';
 
 export default function NavLayout() {
     const pathname = usePathname();
+    const [isVisable, setVisability] = useState(false);
+    const toggleVisability = () => {
+        setVisability(!setVisability);
+    };
 
     return (
         <>
@@ -15,40 +21,19 @@ export default function NavLayout() {
                             <FaRegSmileBeam />
                         </Link>
                     </div>
-                    <div className="nav-items">
-                        <Link
-                            href="/"
-                            className={pathname === '/' ? 'active' : 'hover'}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/projects"
-                            className={
-                                pathname === '/projects' ? 'active' : 'hover'
-                            }
-                        >
-                            Projects
-                        </Link>
-                        <Link
-                            href="/about"
-                            className={
-                                pathname === '/about' ? 'active' : 'hover'
-                            }
-                        >
-                            About
-                        </Link>
-                        <Link
-                            href="/contact"
-                            className={
-                                pathname === '/contact' ? 'active' : 'hover'
-                            }
-                        >
-                            Contact
-                        </Link>
-                    </div>
+                    {window.innerWidth <= 750 && isVisable ? (
+                        <NavItems />
+                    ) : null}
                 </div>
-                <div className="icon right">
+                <div
+                    id="hamburger"
+                    className="icon right"
+                    onClick={() => {
+                        window.innerWidth <= 750
+                            ? setVisability(true)
+                            : setVisability(false);
+                    }}
+                >
                     <FaGripLines />
                 </div>
             </nav>

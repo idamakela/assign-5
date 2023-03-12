@@ -63,6 +63,7 @@ nav {
         color: $font-color;
         font-size: 4rem;
         padding: 0.4em 0.8em;
+        cursor: pointer;
     }
 
     .icon.left {
@@ -179,4 +180,75 @@ button:not(:disabled):hover {
 button:disabled {
     background-color: $disabled-color;
     color: $base-color;
+}
+
+@include tablet {
+    main {
+        .icon {
+            display: none;
+        }
+    }
+
+    footer {
+        .footer-items.left {
+            flex-direction: column;
+        }
+    }
+}
+
+@include mobile {
+    /*nav {
+        .nav-items {
+            display: none;
+        }
+    }*/
+
+    main {
+        .icon {
+            display: none;
+        }
+
+        .landing-text {
+            h1 {
+                font-size: 5rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    footer {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        a {
+            font-size: 1.4rem;
+        }
+
+        .footer-items.left {
+            align-items: center;
+            justify-content: center;
+            order: 2;
+        }
+
+        .icon {
+            margin-bottom: $base-indent;
+            order: 3;
+        }
+
+        .footer-items.right {
+            align-items: center;
+            justify-content: center;
+            margin-top: $base-indent;
+            order: 1;
+        }
+    }
 }
