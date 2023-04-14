@@ -2,7 +2,7 @@
 //DATA ITEMS = 9
 const data = [
     {
-        title: 'one-webpage',
+        title: 'Basic Webpage',
         course: 'Frontend programming 2022',
         desc: 'Responsive portfolio webpage prototype using only HTML and CSS.',
         tools: 'HTML, CSS',
@@ -14,7 +14,7 @@ const data = [
         keywords: ['responsive', 'webpage', 'no javascript'],
     },
     {
-        title: 'two-jsGame',
+        title: 'JavaScript Game',
         course: 'Frontend programming 2022',
         desc: 'Vanilla JS game of Hanged Man made to work through alerts.',
         tools: 'JavaScript, HTML, CSS',
@@ -26,7 +26,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'three-responsiveWebGame',
+        title: 'Responsive Web Game',
         course: 'Frontend programming 2022',
         desc: 'Responsive web game made with HTML, CSS and JQuery.',
         tools: 'JavaScript, CSS, HTML',
@@ -38,7 +38,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'four-api',
+        title: 'API',
         course: 'Frontend programming 2022',
         desc: 'Webpage connected to API using Fetch API.',
         tools: 'JavaScript (Fetch API), CSS, HTML',
@@ -50,7 +50,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'five-portfolio',
+        title: 'Portfolio',
         course: 'Frontend programming 2022',
         desc: 'Basic portfolio using JQuery, HTML and CSS.',
         tools: 'JavaScript (plugins, JQuery), HTML, CSS',
@@ -62,7 +62,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'assign-1',
+        title: 'Article Page',
         course: 'JavaScript Framework 2023',
         desc: 'React application of three articles to switch between.',
         tools: 'JavaScript (React, Vite, npm, node), CSS, HTML',
@@ -74,7 +74,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'assign-2',
+        title: 'Node',
         course: 'JavaScript Framework 2023',
         desc: 'JavaScript application using libraries and packages, and is run in the terminal using node and npm.',
         tools: 'JavaScript (chalk, commander, date-fns, npm, node), HTML, CSS',
@@ -86,7 +86,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'assign-3',
+        title: 'Pixel Perfect',
         course: 'JavaScript Framework 2023',
         desc: 'Dice roller (React application), UI aimed to be "pixel-perfect" from chosen design.',
         tools: 'JavaScript (React, Vite, npm, node, react-icons), CSS (SASS), HTML',
@@ -98,7 +98,7 @@ const data = [
         keywords: [],
     },
     {
-        title: 'assign-4',
+        title: 'API with React',
         course: 'JavaScript Framework 2023',
         desc: 'Articles (React application) fetched from API, including "pixel-perfect" UI Design',
         tools: 'JavaScript (React, react-icons, date-fns, react-loader-spinner), CSS, HTML',
