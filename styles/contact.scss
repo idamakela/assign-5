@@ -47,8 +47,8 @@
         @include flex-column;
         background-color: $font-color;
         border-radius: $base-radius;
-        min-width: 600px;
-        padding: $base-indent;
+        min-width: 550px;
+        padding: 50px;
         position: relative;
         z-index: 10;
 
@@ -68,10 +68,10 @@
 
         textarea {
             margin-bottom: calc($base-indent * 2);
-            max-width: 500px;
-            min-width: 500px;
+            width: 100%;
+            max-width: 100%;
+            resize: none;
             min-height: 250px;
-            max-height: 250px;
         }
 
         button {
@@ -79,4 +79,22 @@
             padding: $base-indent;
         }
     }
+}
+
+@include tablet {
+    .form-container {
+        justify-content: center;
+
+        .cta {
+            display: none; 
+        }
+
+        form {
+
+        }
+    }
+}
+
+@include mobile {
+
 }

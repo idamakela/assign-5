@@ -4,6 +4,12 @@
     }
 }
 
+@mixin tablet {
+    @media (max-width: 1338px) {
+        @content;
+    }
+}
+
 @mixin flex-row {
     display: flex;
     flex-direction: row;
