@@ -13,6 +13,9 @@ export default function SpecProject() {
                         <h3>{project.title}</h3>
                         <p>{project.course}</p>
                         <p>{project.desc}</p>
+                        <div className="project-img mobile">
+                            <img src={project.img}></img>
+                        </div>
                         <div className="btns">
                             {project.live ? (
                                 <button>
@@ -32,7 +35,7 @@ export default function SpecProject() {
                         <p className="tools">{project.tools}</p>
                     </div>
 
-                    <div className="project-img">
+                    <div className="project-img desktop">
                         <img src={project.img}></img>
                     </div>
                 </div>
