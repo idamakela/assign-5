@@ -7,7 +7,7 @@ function isOdd(number) {
 export default function SpecProject() {
     return (
         <div className="projects">
-            {data.map((project, index) => (
+            {data.reverse().map((project, index) => (
                 <div className="project" id={isOdd(index) ? 'odd' : ''}>
                     <div key={index} className="project-text">
                         <h3>{project.title}</h3>
