@@ -22,7 +22,6 @@
     color: $base-color;
     justify-content: flex-end;
     padding: $base-indent;
-    /*max-height: 100vh;*/
 
     .cta {
         @include flex-column;
@@ -30,7 +29,7 @@
         border-right: none;
         border: solid 5px $font-color;
         color: $font-color;
-        font-size: 10rem;
+        font-size: 8rem;
         font-weight: 600;
         justify-content: center;
         /*max-height: 7em;*/
@@ -48,7 +47,7 @@
         @include flex-column;
         background-color: $font-color;
         border-radius: $base-radius;
-        min-width: 650px;
+        min-width: 600px;
         padding: $base-indent;
         position: relative;
         z-index: 10;
@@ -60,7 +59,7 @@
             border: none;
             font-family: var(--inter-font);
             font-size: 2rem;
-            padding: $base-indent;
+            padding: calc($base-indent - 1%);
         }
 
         input {
@@ -69,13 +68,10 @@
 
         textarea {
             margin-bottom: calc($base-indent * 2);
-            max-width: 600px;
-            min-height: 300px;
-        }
-
-        label {
-            font-size: 1.8rem;
-            margin: 0 0 $base-indent $base-indent;
+            max-width: 500px;
+            min-width: 500px;
+            min-height: 250px;
+            max-height: 250px;
         }
 
         button {
