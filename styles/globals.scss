@@ -31,7 +31,7 @@ body {
 
 main {
     flex-grow: 1;
-    padding: $desktop-indent;
+    padding: 62px;
 }
 
 nav {
@@ -179,4 +179,44 @@ button:not(:disabled):hover {
 button:disabled {
     background-color: $disabled-color;
     color: $base-color;
+}
+
+@include mobile {
+    main {
+        padding: 32px;
+    }
+
+    nav {
+        .nav-items {
+            display: none;
+        }
+
+        .icon {
+            font-size: 3.5em;
+        }
+    }
+
+    footer {
+        font-size: 1.4rem;
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        .footer-items.left {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-items.right {
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 2em;
+            border: dotted 8px $font-color;
+        }
+    }
 }

@@ -33,3 +33,22 @@
         width: 100%;
     }
 }
+
+@include mobile {
+    .landing-container {
+        .icon {
+            display: none;
+            font-size: 5rem;
+        }
+    }
+
+    .landing-text {
+        h1 {
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
+}
