@@ -15,14 +15,14 @@
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: min-content auto;
 
     div {
         @include flex-column;
         background-color: $font-color;
         border-radius: $base-radius;
         color: $base-color;
-        padding: 4em 8em;
+        padding: 40px 50px;
 
         h3 {
             @include title-font;
