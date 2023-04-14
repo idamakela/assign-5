@@ -13,7 +13,7 @@ export default function SpecProject() {
                         <h3>{project.title}</h3>
                         <p>{project.course}</p>
                         <p>{project.desc}</p>
-                        <div className="btn">
+                        <div className="btns">
                             {project.live ? (
                                 <button>
                                     <a href={project.demo}>Demo</a>

@@ -19,12 +19,12 @@
         flex-direction: row-reverse;
         text-align: end;
 
-        .btn {
+        .btns {
             justify-content: end;
         }
     }
 
-    .btn {
+    .btns {
         @include flex-row;
         justify-content: start;
     }
@@ -68,6 +68,28 @@
         img {
             height: 100%;
             width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    .project {
+        button {
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+
+        .project-text {
+            .tools {
+                font-size: 1.2rem;
+            }
         }
     }
 }
