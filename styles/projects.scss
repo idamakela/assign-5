@@ -102,9 +102,15 @@
     .project {
         flex-direction: column;
         text-align: center;
+        padding: 2em;
+
+        h3 {
+            font-size: 2.4rem;
+        }
 
         p {
             text-align: start;
+            font-size: 1.4rem;
         }
 
         &#odd {
