@@ -106,12 +106,12 @@
         padding: 2em;
 
         h3 {
-            font-size: 2.4rem;
+            @include mobile-title;
         }
 
         p {
+            @include mobile-body;
             text-align: start;
-            font-size: 1.4rem;
         }
 
         &#odd {

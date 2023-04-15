@@ -62,3 +62,22 @@
         grid-area: 2 / 2 / 3 / 4;
     }
 }
+
+@include mobile {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+
+        div {
+            padding: 20px 25px;
+
+            h3 {
+                @include mobile-title;
+            }
+
+            p {
+                @include mobile-body;
+            }
+        }
+    }
+}
