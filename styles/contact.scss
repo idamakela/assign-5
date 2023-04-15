@@ -1,15 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-.contact-container {
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-text {
-    text-align: center;
-}
-
 .form-container {
     @include flex-row;
     align-items: center;
@@ -92,4 +83,21 @@
 }
 
 @include mobile {
+    .form-container {
+        form {
+            min-width: 50%;
+            max-width: 320px;
+            padding: 25px;
+
+            input,
+            textarea {
+                @include mobile-body;
+                padding: 20px;
+            }
+
+            button {
+                padding: 20px;
+            }
+        }
+    }
 }
