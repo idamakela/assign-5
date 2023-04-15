@@ -188,7 +188,9 @@ button:disabled {
 
     nav {
         .nav-items {
-            display: none;
+            //display: none;
+            flex-wrap: wrap;
+            font-size: 1.4rem;
         }
 
         .icon {
