@@ -13,12 +13,11 @@
 
 html {
     font-family: var(--inter-font), 'Courier New', Courier, monospace;
-    height: 100vh;
+    background-color: $font-color;
 }
 
 body {
     @include flex-column;
-    height: 100%;
 
     &.yellow {
         background-color: $background-yellow;
@@ -203,11 +202,19 @@ button:disabled {
     }
 
     .open-nav {
+        align-items: center;
+        background-color: $font-color;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border: solid $nav-lines $font-color;
+
         .nav-items {
-            flex-wrap: wrap;
             font-size: 1.4rem;
-            background-color: $font-color;
-            width: 60%;
+            padding: 5%;
+            width: 100%;
+            gap: 0;
+            justify-content: space-around;
 
             .active {
                 border-bottom: solid 5px $base-color;
