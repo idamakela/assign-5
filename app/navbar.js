@@ -1,10 +1,16 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa';
 
 export default function NavLayout() {
+    const [open, setOpen] = useState(false);
     const pathname = usePathname();
+
+    const handleClick = () => {
+        setOpen(!open);
+    };
 
     return (
         <>
@@ -48,7 +54,7 @@ export default function NavLayout() {
                         </Link>
                     </div>
                 </div>
-                <div className="icon right">
+                <div className="icon right" onClick={handleClick}>
                     <FaGripLines />
                 </div>
             </nav>
