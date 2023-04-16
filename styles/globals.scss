@@ -41,15 +41,14 @@ nav {
     flex-direction: row;
     justify-content: space-between;
 
+    .nav-left {
+        @include flex-row;
+        align-items: center;
+    }
     a {
         border-bottom: solid 5px transparent;
         color: $font-color;
         text-decoration: none;
-    }
-
-    .nav-left {
-        @include flex-row;
-        align-items: center;
     }
 
     .nav-items {
@@ -191,11 +190,46 @@ button:disabled {
             //display: none;
             flex-wrap: wrap;
             font-size: 1.4rem;
+            position: absolute;
+            background-color: $font-color;
+            top: 0;
+            width: 60%;
+
+            .active {
+                border-bottom: solid 5px $base-color;
+            }
+
+            a {
+                color: $base-color;
+                margin: 1% 0;
+            }
+        }
+
+        .icon.right.open {
+            background-color: $font-color;
+            color: $base-color;
+            position: absolute;
+            right: 0;
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hover {
+            &:hover {
+                border-bottom: solid 5px $base-color;
+            }
         }
 
         .icon {
             font-size: 3.5em;
         }
+    }
+
+    nav.open {
+        position: relative;
+        display: flex;
+        align-items: stretch;
     }
 
     footer {

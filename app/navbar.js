@@ -8,7 +8,7 @@ export default function NavLayout() {
 
     return (
         <>
-            <nav>
+            <nav className='open'>
                 <div className="nav-left">
                     <div className="icon left">
                         <Link href={pathname === '/' ? '' : '/'}>
@@ -48,7 +48,7 @@ export default function NavLayout() {
                         </Link>
                     </div>
                 </div>
-                <div className="icon right">
+                <div className="icon right open">
                     <FaGripLines />
                 </div>
             </nav>
