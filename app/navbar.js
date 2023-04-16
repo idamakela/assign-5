@@ -48,7 +48,7 @@ export default function NavLayout() {
                         </Link>
                     </div>
                 </div>
-                <div className="icon right open">
+                <div className="icon right">
                     <FaGripLines />
                 </div>
             </nav>

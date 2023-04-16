@@ -79,6 +79,10 @@ nav {
     }
 }
 
+.open-nav {
+    display: none;
+}
+
 footer {
     @include body-font;
     @include flex-row;
@@ -204,10 +208,10 @@ button:disabled {
     .open-nav {
         align-items: center;
         background-color: $font-color;
-        display: flex;
+        border: solid $nav-lines $font-color;
+        display: none;
         justify-content: center;
         width: 100%;
-        border: solid $nav-lines $font-color;
 
         .nav-items {
             font-size: 1.4rem;
@@ -235,6 +239,10 @@ button:disabled {
             &:hover {
                 border-bottom: solid 5px $base-color;
             }
+        }
+
+        &.open {
+            display: flex;
         }
     }
 
