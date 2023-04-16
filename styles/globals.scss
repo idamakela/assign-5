@@ -45,17 +45,11 @@ nav {
         @include flex-row;
         align-items: center;
     }
+
     a {
         border-bottom: solid 5px transparent;
         color: $font-color;
         text-decoration: none;
-    }
-
-    .nav-items {
-        @include body-font;
-        @include flex-row;
-        gap: 25%;
-        padding: 5% 10%;
     }
 
     .icon {
@@ -70,6 +64,19 @@ nav {
 
     .icon.right {
         border-left: solid $nav-lines $font-color;
+    }
+}
+
+.nav-items {
+    @include body-font;
+    @include flex-row;
+    gap: 25%;
+    padding: 5% 10%;
+
+    a {
+        border-bottom: solid 5px transparent;
+        color: $font-color;
+        text-decoration: none;
     }
 }
 
@@ -187,12 +194,19 @@ button:disabled {
 
     nav {
         .nav-items {
-            //display: none;
+            display: none;
+        }
+
+        .icon {
+            font-size: 3.5em;
+        }
+    }
+
+    .open-nav {
+        .nav-items {
             flex-wrap: wrap;
             font-size: 1.4rem;
-            position: absolute;
             background-color: $font-color;
-            top: 0;
             width: 60%;
 
             .active {
@@ -208,11 +222,6 @@ button:disabled {
         .icon.right.open {
             background-color: $font-color;
             color: $base-color;
-            position: absolute;
-            right: 0;
-            width: 40%;
-            display: flex;
-            justify-content: flex-end;
         }
 
         .hover {
@@ -220,16 +229,6 @@ button:disabled {
                 border-bottom: solid 5px $base-color;
             }
         }
-
-        .icon {
-            font-size: 3.5em;
-        }
-    }
-
-    nav.open {
-        position: relative;
-        display: flex;
-        align-items: stretch;
     }
 
     footer {

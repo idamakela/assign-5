@@ -8,7 +8,7 @@ export default function NavLayout() {
 
     return (
         <>
-            <nav className='open'>
+            <nav>
                 <div className="nav-left">
                     <div className="icon left">
                         <Link href={pathname === '/' ? '' : '/'}>
@@ -52,6 +52,36 @@ export default function NavLayout() {
                     <FaGripLines />
                 </div>
             </nav>
+            <div className="open-nav">
+                <div className="nav-items">
+                    <Link
+                        href="/"
+                        className={pathname === '/' ? 'active' : 'hover'}
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        href="/projects"
+                        className={
+                            pathname === '/projects' ? 'active' : 'hover'
+                        }
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        href="/about"
+                        className={pathname === '/about' ? 'active' : 'hover'}
+                    >
+                        About
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className={pathname === '/contact' ? 'active' : 'hover'}
+                    >
+                        Contact
+                    </Link>
+                </div>
+            </div>
         </>
     );
 }
