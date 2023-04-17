@@ -35,11 +35,15 @@ export default function About() {
                     <p>Check out more about my experience and work here!</p>
                     <a href="https://www.linkedin.com/in/makelaida/">
                         <p>LinkedIn</p>
-                        <FaExternalLinkSquareAlt />
+                        <div className="link-icon">
+                            <FaExternalLinkSquareAlt />
+                        </div>
                     </a>
                     <a href="https://github.com/idamakela">
                         <p>GitHub</p>
-                        <FaExternalLinkSquareAlt />
+                        <div className="link-icon">
+                            <FaExternalLinkSquareAlt />
+                        </div>
                     </a>
                 </div>
 
