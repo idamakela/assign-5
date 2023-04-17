@@ -221,6 +221,8 @@ button:disabled {
     }
 
     nav {
+        border-top: solid $nav-lines $font-color;
+
         .nav-items {
             @include body-font;
             gap: 10%;
