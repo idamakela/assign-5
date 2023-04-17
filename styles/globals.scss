@@ -63,6 +63,18 @@ nav {
 
     .icon.right {
         border-left: solid $nav-lines $font-color;
+        opacity: 1;
+        transition: opacity 5s ease-in-out;
+
+        .visible {
+            opacity: 1;
+            transition-delay: 0;
+        }
+
+        .hidden {
+            opacity: 0;
+            transition-delay: 0.5s;
+        }
     }
 }
 

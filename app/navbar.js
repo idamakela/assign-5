@@ -1,20 +1,24 @@
 'use client';
 import Link from 'next/link';
+import styles from '../styles/animate.module.scss';
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 export default function NavLayout() {
     const [open, setOpen] = useState(false);
+    const [visible, setVisible] = useState(false);
     const isMobileScreen = useMediaQuery({ maxWidth: 576 });
     const pathname = usePathname();
 
     const handleClick = () => {
-        if(isMobileScreen) {
-            setOpen(!open);
-        }
+        setOpen(!open);
+    };
+
+    const animate = () => {
+        setVisible(!visible);
     };
 
     return (
@@ -59,11 +63,16 @@ export default function NavLayout() {
                         </Link>
                     </div>
                 </div>
-                <div className="icon right" onClick={handleClick}>
+                <div
+                    className={`icon right`}
+                    onClick={isMobileScreen ? handleClick : animate}
+                >
                     {open && isMobileScreen ? (
                         <IoIosCloseCircleOutline />
                     ) : (
-                        <FaGripLines />
+                        <FaGripLines
+                            className={`${!visible ? 'visible' : 'hidden'}`}
+                        />
                     )}
                 </div>
             </nav>
