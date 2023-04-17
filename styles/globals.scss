@@ -77,6 +77,16 @@ nav {
         color: $font-color;
         text-decoration: none;
     }
+
+    .hover {
+        &:hover {
+            border-bottom: solid 5px $font-color;
+        }
+    }
+
+    .active {
+        border-bottom: solid 5px $font-color;
+    }
 }
 
 .open-nav {
@@ -157,16 +167,6 @@ footer {
     }
 }
 
-.hover {
-    &:hover {
-        border-bottom: solid 5px $font-color;
-    }
-}
-
-.active {
-    border-bottom: solid 5px $font-color;
-}
-
 button {
     background-color: $background-yellow;
     border-radius: 50px;
@@ -213,10 +213,20 @@ button:disabled {
             gap: 10%;
             justify-content: space-around;
             padding-left: 20%;
+
+            .hover {
+                &:hover {
+                    border-bottom: solid 5px $font-color;
+                }
+            }
+
+            .active {
+                border-bottom: solid 5px $font-color;
+            }
         }
     }
 
-        footer {
+    footer {
         flex-direction: column-reverse;
         gap: 20px;
 
