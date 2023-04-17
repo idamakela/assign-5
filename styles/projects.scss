@@ -78,7 +78,20 @@
 }
 
 @include tablet {
+    .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .project {
+        max-width: 400px;
+        text-align: center;
+
+        &#odd {
+            text-align: center;
+        }
+
         button {
             font-size: 1.4rem;
         }
@@ -89,12 +102,27 @@
 
         p {
             font-size: 1.6rem;
+            text-align: start;
         }
 
         .project-text {
             .tools {
                 font-size: 1.2rem;
             }
+        }
+
+        .btns {
+            flex-direction: column;
+        }
+
+        .project-img.desktop {
+            display: none;
+        }
+
+        .project-img.mobile {
+            display: block;
+            max-width: none;
+            margin: 10px;
         }
     }
 }
@@ -118,6 +146,7 @@
             flex-direction: column;
             text-align: center;
         }
+
         .btns {
             flex-direction: column;
         }

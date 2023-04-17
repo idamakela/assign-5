@@ -4,14 +4,8 @@
     }
 }
 
-@mixin tablett {
-    @media (max-width: 999px) {
-        @content;
-    }
-}
-
 @mixin tablet {
-    @media (max-width: 1338px) {
+    @media (max-width: 1024px) {
         @content;
     }
 }

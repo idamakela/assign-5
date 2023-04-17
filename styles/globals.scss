@@ -190,6 +190,32 @@ button:disabled {
     color: $base-color;
 }
 
+@include tablet {
+    main {
+        padding: 20px;
+    }
+
+    .container {
+        .text {
+            h2 {
+                font-size: 7rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    nav {
+        .nav-items {
+            @include mobile-body;
+            gap: 6%;
+            justify-content: space-around;
+        }
+    }
+}
+
 @include mobile {
     main {
         padding: 20px;
