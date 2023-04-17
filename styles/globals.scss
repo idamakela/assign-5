@@ -204,6 +204,13 @@ button:disabled {
 }
 
 @include tablet {
+    nav,
+    main,
+    footer {
+        border-right: solid $nav-lines $font-color;
+        border-left: solid $nav-lines $font-color;
+    }
+
     main {
         padding: 20px;
     }
@@ -244,6 +251,7 @@ button:disabled {
     footer {
         flex-direction: column-reverse;
         gap: 20px;
+        border-bottom: solid $nav-lines $font-color;
 
         .footer-items.left {
             flex-direction: column;
