@@ -34,6 +34,24 @@
     }
 }
 
+@include tablet {
+    .landing-container {
+        .icon {
+            font-size: 11rem;
+        }
+    }
+
+    .landing-text {
+        h1 {
+            font-size: 7rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
 @include mobile {
     .landing-container {
         .icon {
