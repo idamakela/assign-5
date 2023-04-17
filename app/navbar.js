@@ -18,7 +18,11 @@ export default function NavLayout() {
     };
 
     const animate = () => {
-        setVisible(!visible);
+        if (!isMobileScreen) {
+            setVisible(!visible);
+        } else if (isMobileScreen && visible) {
+            setVisible(true);
+        }
     };
 
     return (

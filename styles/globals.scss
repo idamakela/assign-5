@@ -55,6 +55,7 @@ nav {
         color: $font-color;
         font-size: 4rem;
         padding: 0.4em 0.8em;
+        cursor: pointer;
     }
 
     .icon.left {
@@ -73,7 +74,7 @@ nav {
 
         .hidden {
             opacity: 0;
-            transition-delay: 0.5s;
+            transition-delay: 0.25s;
         }
     }
 }
