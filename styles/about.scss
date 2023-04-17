@@ -80,6 +80,16 @@
     .grid-container {
         display: flex;
         flex-direction: column;
+
+        div {
+            p {
+                margin-top: 2%;
+            }
+
+            a {
+                margin-top: 0;
+            }
+        }
     }
 }
 
