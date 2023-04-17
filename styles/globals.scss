@@ -244,6 +244,10 @@ button:disabled {
         &.open {
             display: flex;
         }
+
+        &.closed {
+            display: none;
+        }
     }
 
     footer {

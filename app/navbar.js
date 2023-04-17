@@ -58,7 +58,7 @@ export default function NavLayout() {
                     <FaGripLines />
                 </div>
             </nav>
-            <div className="open-nav">
+            <div className={`open-nav ${open ? "open" : "closed"}`}>
                 <div className="nav-items">
                     <Link
                         href="/"
