@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FaRegSmileBeam, FaGripLines } from 'react-icons/fa';
+import { IoIosCloseCircleOutline } from 'react-icons/io';
 
 export default function NavLayout() {
     const [open, setOpen] = useState(false);
@@ -55,10 +56,13 @@ export default function NavLayout() {
                     </div>
                 </div>
                 <div className="icon right" onClick={handleClick}>
-                    <FaGripLines />
+                    {open ? <IoIosCloseCircleOutline /> : <FaGripLines />}
                 </div>
             </nav>
-            <div className={`open-nav ${open ? "open" : "closed"}`}>
+            <div
+                className={`open-nav ${open ? 'open' : 'closed'}`}
+                onClick={handleClick}
+            >
                 <div className="nav-items">
                     <Link
                         href="/"

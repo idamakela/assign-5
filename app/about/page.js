@@ -1,4 +1,5 @@
 import '../../styles/about.scss';
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 
 export default function About() {
     return (
@@ -34,9 +35,11 @@ export default function About() {
                     <p>Check out more about my experience and work here!</p>
                     <a href="https://www.linkedin.com/in/makelaida/">
                         <p>LinkedIn</p>
+                        <FaExternalLinkSquareAlt />
                     </a>
                     <a href="https://github.com/idamakela">
                         <p>GitHub</p>
+                        <FaExternalLinkSquareAlt />
                     </a>
                 </div>
 
