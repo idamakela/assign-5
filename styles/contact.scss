@@ -72,12 +72,22 @@
     }
 }
 
+@include desktop {
+    .form-container {
+        .cta {
+            display: none;
+        }
+    }
+}
+
 @include tablet {
     .form-container {
         justify-content: center;
 
-        .cta {
-            display: none;
+        form {
+            min-width: 400px;
+            max-width: 400px;
+            padding: 30px;
         }
     }
 }
@@ -86,7 +96,7 @@
     .form-container {
         form {
             min-width: 50%;
-            max-width: 320px;
+            max-width: 350px;
             padding: 25px;
 
             input,

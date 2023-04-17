@@ -10,6 +10,12 @@
     }
 }
 
+@mixin desktop {
+    @media (max-width: 1290px) {
+        @content;
+    }
+}
+
 @mixin flex-row {
     display: flex;
     flex-direction: row;
