@@ -209,9 +209,28 @@ button:disabled {
 
     nav {
         .nav-items {
-            @include mobile-body;
-            gap: 6%;
+            @include body-font;
+            gap: 5%;
             justify-content: space-around;
+            padding-left: 10%;
+        }
+    }
+
+        footer {
+        flex-direction: column-reverse;
+        gap: 20px;
+
+        .footer-items.left {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-items.right {
+            align-items: center;
+        }
+
+        .icon {
+            border: dotted 8px $font-color;
         }
     }
 }
@@ -246,10 +265,6 @@ button:disabled {
             gap: 0;
             justify-content: space-around;
 
-            .active {
-                border-bottom: solid 5px $base-color;
-            }
-
             a {
                 color: $base-color;
                 margin: 1% 0;
@@ -261,18 +276,22 @@ button:disabled {
             color: $base-color;
         }
 
-        .hover {
-            &:hover {
-                border-bottom: solid 5px $base-color;
-            }
-        }
-
         &.open {
             display: flex;
         }
 
         &.closed {
             display: none;
+        }
+
+        .active {
+            border-bottom: solid 5px $base-color;
+        }
+
+        .hover {
+            &:hover {
+                border-bottom: solid 5px $base-color;
+            }
         }
     }
 
