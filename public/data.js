@@ -88,7 +88,7 @@ const data = [
     {
         title: 'Pixel Perfect',
         course: 'JavaScript Framework 2023',
-        desc: 'Dice roller (React application), UI aimed to be "pixel-perfect" from chosen design.',
+        desc: 'Dice roller, UI aimed to be "pixel-perfect" from chosen design.',
         tools: 'JavaScript (React, Vite, npm, node, react-icons), CSS (SASS), HTML',
         img: './img/assign-3.png',
         demo: 'https://d20-diceroller.vercel.app/',
@@ -100,7 +100,7 @@ const data = [
     {
         title: 'API with React',
         course: 'JavaScript Framework 2023',
-        desc: 'Articles (React application) fetched from API, including "pixel-perfect" UI Design',
+        desc: 'Articles fetched from API, including "pixel-perfect" UI Design',
         tools: 'JavaScript (React, react-icons, date-fns, react-loader-spinner), CSS, HTML',
         img: './img/assign-4.png',
         demo: 'https://spacenews-gamma.vercel.app/',
