@@ -124,7 +124,7 @@ const data = [
     {
         title: 'NextM Form',
         course: 'Extra curricular 2023',
-        desc: 'Offbording single-page form for VR players, visitors of the schools booths for the NextM event 2023',
+        desc: 'Offbording single-page form for VR players, visitors of the schools booth for the NextM event 2023',
         tools: 'React.js & Firebase realtime database',
         img: './img/nextmForm.png',
         demo: '',
